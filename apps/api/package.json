@@ -5,15 +5,23 @@
   "main": "src/index.js",
   "types": "src/index.ts",
   "scripts": {
-    "dev": "tsx watch src/index.ts"
+    "dev": "tsx watch src/http/server.ts"
   },
   "dependencies": {
-    "@saas/auth": "workspace:*"
+    "@fastify/cors": "^11.0.1",
+    "@prisma/client": "6.5.0",
+    "@saas/auth": "workspace:*",
+    "bcryptjs": "^3.0.2",
+    "fastify": "^5.2.2",
+    "fastify-type-provider-zod": "^4.0.2",
+    "prisma": "^6.5.0",
+    "zod": "^3.24.2"
   },
   "devDependencies": {
     "@saas/eslint-config": "workspace:*",
     "@saas/prettier": "workspace:*",
     "@saas/tsconfig": "workspace:*",
+    "@types/bcryptjs": "^3.0.0",
     "@types/node": "^22.13.13",
     "tsx": "^4.19.3"
   },
